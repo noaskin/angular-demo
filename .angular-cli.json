@@ -5,6 +5,38 @@
   },
   "apps": [
     {
+      "name": "playground",
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico",
+        "favicon.png"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/typeface-exo/index.css",
+        "../node_modules/open-sans-fontface/open-sans.css",
+        "../node_modules/nebular-icons/scss/nebular-icons.scss",
+        "styles.scss"
+      ],
+      "scripts": [
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "playground-wp",
       "root": "src",
       "outDir": "dist",
       "assets": [
@@ -15,13 +47,60 @@
       "main": "main.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
+      "tsconfig": "tsconfig.wp.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/typeface-exo/index.css",
+        "../node_modules/open-sans-fontface/open-sans.css",
+        "../node_modules/nebular-icons/scss/nebular-icons.scss",
+        "styles.scss"
+      ],
+      "scripts": [
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "docs",
+      "root": "docs",
+      "outDir": "docs/dist",
+      "assets": [
+        "assets",
+        "favicon.ico",
+        "favicon.png"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "../node_modules/typeface-exo/index.css",
+        "../node_modules/open-sans-fontface/open-sans.css",
+        "../node_modules/roboto-fontface/css/roboto/sass/roboto-fontface.scss",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/ionicons/scss/ionicons.scss",
+        "../node_modules/socicon/css/socicon.css",
+        "../node_modules/swiper/dist/css/swiper.css",
+        "../node_modules/prismjs/themes/prism.css",
+        "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/prismjs/prism.js",
+        "../node_modules/prismjs/components/prism-jsx.js",
+        "../node_modules/prismjs/components/prism-bash.js",
+        "../node_modules/prismjs/components/prism-json.js",
+        "../node_modules/prismjs/components/prism-scss.js",
+        "../node_modules/prismjs/components/prism-typescript.js",
+        "../node_modules/swiper/dist/js/swiper.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

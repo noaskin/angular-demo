@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
+import 'style-loader!./app.themes.scss';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `<router-outlet></router-outlet>`,
 })
 export class AppComponent {
   title = 'app';
